@@ -13,6 +13,6 @@ func main() {
 	config.Carregar()
 	r := router.Gerar()
 
-	fmt.Println("Listen on port %d", config.Porta)
-	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", config.Porta), r))
+	fmt.Println("Listen on port :", config.Porta)
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(": %d", config.Porta), r))
 }
